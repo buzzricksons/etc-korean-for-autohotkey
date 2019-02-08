@@ -10,16 +10,24 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 
-$LAlt::
-	KeyWait, LAlt, T0.5
+
+; //Change language
+; //to English
+; If (A_PriorHotKey = "LAlt" AND A_TimeSincePriorHotkey < 200)
+; {
+;     LAlt::SetInputLang(0x0409)
+; }
+
+
+$RAlt::
+	KeyWait, RAlt, T0.5
 
 	if (ErrorLevel) {
-	    Send, {LAlt}
-	    KeyWait, LAlt
+	    Send, {RAlt}
+	    KeyWait, RAlt
 	} else {
 	    SetInputLang(0x0409) ;//to English
 	}
-	;KeyWait, LAlt
 return
 
 
