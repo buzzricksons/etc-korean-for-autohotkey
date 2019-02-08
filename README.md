@@ -12,3 +12,7 @@ AutoHotkey가 설치 되어 있어야 함. (https://www.autohotkey.com/)
 
 # 사용방법
 `ChangeKoreanforJapaneseWindowsOS_rev1.ahk`파일을 더블클릭해서 실행.
+
+# 테스트환경
+* Windows 10 Enterprise
+* Google 일본어 입력 설치
